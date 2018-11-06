@@ -1,8 +1,8 @@
 import bunyan from 'bunyan';
-import  {name} from '../config/bunyan';
+// import  {name} from '../config/bunyan';
 
 const logger = bunyan.createLogger({
-  name,
+  name:'selfkey',
   serializers: {
     req:bunyan.stdSerializers.req,
     err: bunyan.stdSerializers.err,
